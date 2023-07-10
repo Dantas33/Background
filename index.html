@@ -1,0 +1,37 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title>Mudar cor de fundo</title>
+    </head> 
+      
+    <body style = "text-align: center;">
+           
+        <h1>Teste</h1> 
+          
+        <p id = "p1" style ="color: red"></p>
+            
+                
+        <button onclick = "mudarCor()">Clique aqui</button>
+          
+          
+        <script>
+            var el_up = document.getElementById("p1");
+            var corFundoAzul = false;            
+          
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              
+            function mudarCor() {
+
+                if (corFundoAzul) {
+                    changeColor('white');
+                } else {
+                changeColor('blue');
+            }
+            
+            corFundoAzul = !corFundoAzul;
+        }
+        </script> 
+    </body> 
+</html>      
